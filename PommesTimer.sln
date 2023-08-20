@@ -1,8 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{6FFBACF0-7D9D-4145-A6D9-CF35D12F41DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{63009B03-2967-4D05-A232-40C9E9600E63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PommesTimer", "Sources\PommesTimer\PommesTimer.csproj", "{50CAFA24-9AAD-4633-AA93-400C0B0824DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PommesTimer.MAUI", "Sources\PommesTimer.MAUI\PommesTimer.MAUI.csproj", "{98D827ED-33C4-471B-8BB1-D16CD2FF2303}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50CAFA24-9AAD-4633-AA93-400C0B0824DA} = {6FFBACF0-7D9D-4145-A6D9-CF35D12F41DD}
+		{98D827ED-33C4-471B-8BB1-D16CD2FF2303} = {6FFBACF0-7D9D-4145-A6D9-CF35D12F41DD}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50CAFA24-9AAD-4633-AA93-400C0B0824DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CAFA24-9AAD-4633-AA93-400C0B0824DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CAFA24-9AAD-4633-AA93-400C0B0824DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CAFA24-9AAD-4633-AA93-400C0B0824DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D827ED-33C4-471B-8BB1-D16CD2FF2303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D827ED-33C4-471B-8BB1-D16CD2FF2303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D827ED-33C4-471B-8BB1-D16CD2FF2303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D827ED-33C4-471B-8BB1-D16CD2FF2303}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
