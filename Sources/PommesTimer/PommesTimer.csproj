@@ -6,8 +6,17 @@
         <Nullable>enable</Nullable>
         <PackageId>Chillipommes.PommesTimer</PackageId>
         <Authors>Chillipommes</Authors>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\..\LICENSE.txt">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
 
 
 
