@@ -17,15 +17,12 @@
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
         <PackageId>Chillipommes.PommesTimer.MAUI</PackageId>
         <Authors>Chillipommes</Authors>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
 
     <ItemGroup>
-      <ProjectReference Include="..\PommesTimer\PommesTimer.csproj" />
-    </ItemGroup>
-
-
-    <ItemGroup>
+      <PackageReference Include="Chillipommes.PommesTimer" Version="1.0.0" />
       <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
     </ItemGroup>
 
