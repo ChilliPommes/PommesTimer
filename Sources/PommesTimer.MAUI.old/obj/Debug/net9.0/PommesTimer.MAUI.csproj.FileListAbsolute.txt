@@ -1,6 +1,0 @@
-D:\Projekte\PommesTimer\Sources\PommesTimer.MAUI\obj\Debug\net9.0\PommesTimer.MAUI.csproj.AssemblyReference.cache
-D:\Projekte\PommesTimer\Sources\PommesTimer.MAUI\obj\Debug\net9.0\PommesTimer.MAUI.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projekte\PommesTimer\Sources\PommesTimer.MAUI\obj\Debug\net9.0\PommesTimer.MAUI.AssemblyInfoInputs.cache
-D:\Projekte\PommesTimer\Sources\PommesTimer.MAUI\obj\Debug\net9.0\PommesTimer.MAUI.AssemblyInfo.cs
-D:\Projekte\PommesTimer\Sources\PommesTimer.MAUI\obj\Debug\net9.0\PommesTimer.MAUI.csproj.CoreCompileInputs.cache
-D:\Projekte\PommesTimer\Sources\PommesTimer.MAUI\obj\Debug\net9.0\PommesTimer.MAUI.sourcelink.json

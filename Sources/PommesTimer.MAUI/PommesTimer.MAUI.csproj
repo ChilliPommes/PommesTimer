@@ -16,21 +16,23 @@
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
         <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+        <PackageId>Chillipommes.PommesTimer.MAUI</PackageId>
+        <Version>1.1.0</Version>
+        <Authors>Chillipommes</Authors>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controls\" />
-      <Folder Include="Converter\" />
-      <Folder Include="Resources\" />
-      <Folder Include="ViewModels\" />
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+        <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.21" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\PommesTimer\PommesTimer.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Icons\green_check.svg" />
+      <MauiImage Include="Resources\Icons\green_check.svg" />
     </ItemGroup>
 
 </Project>
