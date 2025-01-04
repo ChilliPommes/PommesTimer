@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PommesTimer.MAUI</name>
+    </assembly>
+    <members>
+        <member name="M:PommesTimer.MAUI.Controls.ComplexProgressBar.TapGestureRecognizer_OnTapped(System.Object,Microsoft.Maui.Controls.TappedEventArgs)">
+            <summary>
+            Method to do some animation stuff on the ui
+            </summary>
+            <param name="sender">UI element who is sender</param>
+            <param name="e">Tapped args</param>
+        </member>
+        <member name="M:PommesTimer.MAUI.Controls.SimpleProgressBar.TapGestureRecognizer_OnTapped(System.Object,Microsoft.Maui.Controls.TappedEventArgs)">
+            <summary>
+            Method to do some animation stuff on the ui
+            </summary>
+            <param name="sender">UI element who is sender</param>
+            <param name="e">Tapped args</param>
+        </member>
+        <member name="P:PommesTimer.MAUI.ViewModels.BaseProgressBarViewModel.Name">
+            <summary>
+            Property to publish the name of the timer item to the ui
+            </summary>
+        </member>
+        <member name="P:PommesTimer.MAUI.ViewModels.BaseProgressBarViewModel.Progress">
+            <summary>
+            Property to publish the progress of the timer to the ui
+            </summary>
+        </member>
+        <member name="P:PommesTimer.MAUI.ViewModels.BaseProgressBarViewModel.IsDone">
+            <summary>
+            Property to publish the done state to the ui
+            </summary>
+        </member>
+        <member name="P:PommesTimer.MAUI.ViewModels.BaseProgressBarViewModel.DoneTapCommand">
+            <summary>
+            Property to connect application behavior with tap event onto ui
+            </summary>
+        </member>
+        <member name="P:PommesTimer.MAUI.ViewModels.ComplexProgressBarViewModel.Time">
+            <summary>
+            Property to publish the remaining time of the timer to the ui
+            </summary>
+        </member>
+        <member name="M:PommesTimer.MAUI.ViewModels.ComplexProgressBarViewModel.PublishProgress(System.Double,System.Double)">
+            <summary>
+            Callback method to get value from timer tick into ui
+            </summary>
+            <param name="progress">Progress of timer in percentage</param>
+            <param name="time">Time of the timer in seconds</param>
+        </member>
+        <member name="M:PommesTimer.MAUI.ViewModels.SimpleProgressBarViewModel.PublishProgress(System.Double)">
+            <summary>
+            Callback method to get value from timer tick into ui
+            </summary>
+            <param name="progress">Progress of timer in percentage</param>
+        </member>
+    </members>
+</doc>

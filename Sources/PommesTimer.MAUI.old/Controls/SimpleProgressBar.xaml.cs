@@ -1,11 +1,13 @@
-﻿using PommesTimer.MAUI.ViewModels;
+﻿using Microsoft.Maui;
+using Microsoft.Maui.Controls;
+using PommesTimer.MAUI.ViewModels;
 // ReSharper disable RedundantExtendsListEntry
 
 namespace PommesTimer.MAUI.Controls
 {
-    public partial class ComplexProgressBar : ContentView
+    public partial class SimpleProgressBar : ContentView
     {
-        public ComplexProgressBar()
+        public SimpleProgressBar()
         {
             InitializeComponent();
         }
@@ -14,25 +16,25 @@ namespace PommesTimer.MAUI.Controls
         {
             base.OnBindingContextChanged();
 
-            if (BindingContext is ComplexProgressBarViewModel complexProgressBarViewModel)
+            if (BindingContext is SimpleProgressBarViewModel simpleProgressBarViewModel)
             {
-                complexProgressBarViewModel.PropertyChanged += (_, args) =>
+                simpleProgressBarViewModel.PropertyChanged += (_, args) =>
                 {
                     // Smooth progress transition on the bar
-                    if (args.PropertyName?.Equals(nameof(complexProgressBarViewModel.Progress)) == true)
+                    if (args.PropertyName?.Equals(nameof(simpleProgressBarViewModel.Progress)) == true)
                     {
-                        Bar.ProgressTo(complexProgressBarViewModel.Progress, 980, Easing.Linear);
+                        Bar.ProgressTo(simpleProgressBarViewModel.Progress, 980, Easing.Linear);
                     }
                     
                     // Smooth fade in after timer is finished and progress bar still animating
-                    if (args.PropertyName?.Equals(nameof(complexProgressBarViewModel.IsDone)) == true)
+                    if (args.PropertyName?.Equals(nameof(simpleProgressBarViewModel.IsDone)) == true)
                     {
                         Image.FadeTo(1, 980, Easing.Default);
                     }
                 };
             }
         }
-        
+
         /// <summary>
         /// Method to do some animation stuff on the ui
         /// </summary>
