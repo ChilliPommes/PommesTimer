@@ -9,6 +9,7 @@
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
         <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
         <LangVersion>default</LangVersion>
+        <Version>1.0.1</Version>
 
     </PropertyGroup>
 
