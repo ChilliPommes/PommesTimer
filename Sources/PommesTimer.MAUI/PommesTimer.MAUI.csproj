@@ -15,11 +15,12 @@
         <PackageId>Chillipommes.PommesTimer.MAUI</PackageId>
         <Version>1.1.0</Version>
         <Authors>Chillipommes</Authors>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-        <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.21" />
+        <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.100" />
     </ItemGroup>
 
     <ItemGroup>
