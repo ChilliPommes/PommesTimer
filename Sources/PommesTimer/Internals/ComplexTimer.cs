@@ -19,7 +19,7 @@ namespace PommesTimer.Internals
 
         // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
         private readonly double _totalSeconds;
-        
+
         /// <summary>
         /// Constructs a simple timer with given values
         /// </summary>
@@ -31,14 +31,15 @@ namespace PommesTimer.Internals
         public ComplexTimer(
             Action<double, double> callback,
             double value,
-            double steps = 1, 
-            double delay = 0, 
+            double steps = 1,
+            double delay = 0,
             double tickRate = 1)
         {
             _timerProgress = new TimerProgress(value, steps);
             _timerProgress.LimitReached += (_, _) =>
             {
                 IsFinished = true;
+                callback(100, 0);
                 _timer!.Dispose();
             };
 
@@ -59,7 +60,7 @@ namespace PommesTimer.Internals
                 TimeSpan.FromSeconds(delay),
                 TimeSpan.FromSeconds(tickRate));
         }
-        
+
         /// <summary>
         /// Stores the finished state of the timer
         /// </summary>
