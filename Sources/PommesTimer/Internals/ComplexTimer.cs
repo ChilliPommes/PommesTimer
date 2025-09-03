@@ -71,6 +71,15 @@ namespace PommesTimer.Internals
         }
 
         /// <summary>
+        /// Stops the timer and marks it as finished.
+        /// </summary>
+        public void StopTimer()
+        {
+            IsFinished = true;
+            _timer.Dispose();
+        }
+
+        /// <summary>
         /// Invoker impl. of INotifyPropertyChanged
         /// </summary>
         /// <param name="propertyName"></param>
